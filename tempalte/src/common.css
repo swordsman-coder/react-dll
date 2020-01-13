@@ -1,0 +1,45 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body p {
+  margin-bottom: 0;
+}
+.ezrd-pop {
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.ezrd-pop .ezrd-pop-inner {
+  background: rgba(0,0,0,.5);
+  border-radius: 6px;
+  color: #fff;
+}
+.ezrd-pop .ezrd-pop-inner .title{
+  color: #8bc34a;
+}
+.ezrd-pop .ezrd-pop-arrow {
+  transform: none !important;
+  -webkit-transform: none !important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  top: 100%;
+  margin-left: -6px;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-top: 8px solid rgba(0,0,0,.5);
+}
+/* switch disabled状态颜色太浅 */
+.ezrd-switch-disabled {
+  background: #e2e2e2;
+  border-color: #e2e2e2;
+}

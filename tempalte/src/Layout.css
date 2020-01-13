@@ -1,0 +1,7 @@
+@import '~antd/dist/antd.css';
+.main-content{
+  padding: 20px;
+}
+body{
+  padding-bottom:60px
+}
