@@ -1,0 +1,20 @@
+image: node:latest
+cache:
+  paths:
+    - node_modules/
+  
+js_eslint:
+  stage: test
+  script:
+    - node -v
+    - npm -v
+    - pwd
+    - yarn config set registry http://npmjs.ezrpro.in
+    - npm set registry http://npmjs.ezrpro.in
+    - yarn 
+    - npm run lint
+  tags:
+    - ezr
+  cache:
+    paths:
+      - node_modules/

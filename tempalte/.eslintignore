@@ -1,0 +1,12 @@
+/node_modules/*
+# Ignore built files except build/index.js
+dist/
+.gitignore
+routerMap/
+
+scripts/
+src/utils/
+routerMap/
+
+src/Layout.jsx
+# src/App.jsx

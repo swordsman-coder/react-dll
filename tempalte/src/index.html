@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ezp</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        (function () {
+            var a = document.getElementById('div_main2')
+            var b = a.getElementsByTagName('script')
+
+            for (var i = 1; i < 3; i++) {
+                var d = document.createElement("script");
+                d.src = b[i]['src']
+                d.type = "text/javascript";
+
+                document.body.appendChild(d);
+
+            }
+            for (var i = 0; i < 3; i++) {
+                var e = b[0]
+                e.parentNode.removeChild(e)
+            }
+        })()
+    </script>
+</body>
+
+</html>
